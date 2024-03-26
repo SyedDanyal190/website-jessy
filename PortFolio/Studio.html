@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="stylesheet" href="Studio.css">
+   
+</head>
+<body>
+
+  
+ <!-------------------------------------------- Nav-bar ------------------------------------------->
+    
+ <header class="header">
+  <nav class="nav-left">
+    <a  href="Index.html" class="logo"><h1>JESSY</h1></a>
+  </nav>  
+ <nav class="nav-center">
+  <a href="Index.html" class="active">Home</a>
+  <a href="Portfolio.html">Portfolio</a>
+  <a href="Contact.html">Contact</a>
+ </nav>
+ <nav class="nav-right-1">
+  <i class='bx bx-basketball'></i>
+  </nav> 
+  <nav class="nav-right-2">
+  <a href="#about">Contact me</a>
+ </nav>
+ </header>
+
+
+ <!-- ----------------------------------  Main ------------------------------------------------> 
+
+
+    <div class="Main">
+     <div class="Main-subbox">
+    <div class="left">
+        <div class="left-pic">
+            
+        </div>
+    </div>
+    <div class="right">
+      <div class="rightsubbox">
+        <div><span><h1  class="h1" data-aos="fade-left">Branding nice studio</h1></span></div>
+        <div class="p"><p class="p1">I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because those who do not know how to pursue pleasure rationally. </p></div>
+       
+      <div class="buttonbox" >
+        
+        <div class="a12" style="display: flex; flex-direction: row;">
+          <div class="button" id="buttonaa" style="border-radius: .8rem; width: 90px;height: 70px;display: flex;justify-content: center;align-items: center;">
+            <div style="display: flex;justify-content: center;align-items: center;"> <i class='bx bxs-heart'></i></div>
+       </div>
+       <div style="display: grid;grid-template-columns: 1fr 50%; display: flex;justify-content: center;align-items: center;" >
+        <p style="margin-left: 30px; color: white;font-size: 22px;">Likes</p>
+        <span id="likeCount" style="color: white;font-size: 22px;">86</span>
+        </div>
+
+
+        <div class="button" id="buttonaa" style="margin-left: 20px;border-radius: .8rem; width: 90px;height: 70px;display: flex;justify-content: center;align-items: center;">
+          <div style="display: flex;justify-content: center;align-items: center;"><i class='bx bx-share-alt' ></i></div>
+     </div>
+     <div style="display: grid;grid-template-columns: 1fr 50%; display: flex;justify-content: center;align-items: center;" >
+      <p style="margin-left: 30px; color: white;font-size: 22px;">shares</p>
+    
+      </div>
+
+
+        </div>
+
+
+      <!-- <div  style="display: grid;grid-template-columns: 1fr 50%;" style="border: 1px solid rgb(122, 49, 49);">
+        <div class="button" id="button" >
+          <i class='bx bxs-heart'></i>
+     </div>
+     <div style="display: grid;grid-template-columns: 1fr 50%; display: flex;justify-content: center;align-items: center;" >
+      <p>Likes</p>
+      <span id="likeCount">86</span>
+      </div>
+       </div>
+      <div  style="display: grid;grid-template-columns: 1fr 50%;" style="border: 1px solid rgb(0, 4, 255);">
+        <div class="button" id="button" >
+          <i class='bx bxs-heart'></i>
+     </div>
+     <div style="display: grid;grid-template-columns: 1fr 50%;display: flex;justify-content: center;align-items: center;" >
+      <p>Likes</p>
+      <span id="likeCount">86</span>
+      </div>
+       
+      </div> -->
+      </div>
+
+
+
+
+
+
+
+        <div class="four">
+            <div><span style="color: orange; font-size: 26px;" ><p>Categoray</p></span></div>
+            <div><span style="color: white; font-size: 18px;"><p>App Design</p></span></div>
+        </div>
+        <div class="five">
+            <div><span style="color: orange;font-size: 26px;"><p>Client</p></span></div>
+            <div><span style="color: white; font-size: 18px;"><p  class="p1" data-aos="fade-left">Company Name</p></span></div>
+        </div>
+    </div>
+    </div>
+      </div>   
+    </div>
+
+
+
+     <!-- ---------------------------------------------- Footer --------------------------------------------- -->
+
+     <footer>
+      <div class="Footer">
+          <div class="Footer-Main">
+              <div class="Footer-left"> 
+                 <div class="Footer-left-subbox">
+                  <h1>JESSY</h1>
+                 </div>
+              </div>
+              <div class="Footer-center">
+                <div class="Footer-center-subbox">
+                  <p>&copy2023 Freelancer - Phlox Elementor WordPress ThemeComplete Elementor Demo - Phlox WordPress Theme</p>
+                </div>
+              </div>
+              <div class="Footer-right">
+                 <div class="Footer-right-subbox">
+                  <div><i class='bx bxl-facebook'></i></div>
+                  <div><i class='bx bxl-linkedin'></i></div>
+                  <div><i class='bx bxl-instagram-alt'   ></i></div>
+                  <div><i class='bx bxl-behance' ></i></div>
+                 </div>
+              </div>
+             </div>
+          </div>
+      </div>
+    </footer>
+  
+
+
+</body>
+</html>
+
+<!-- ----------------------------------------------------------------- -->
+
+
+<script>
+  const btn = document.getElementById('buttonaa');
+  const likeCount = document.getElementById('likeCount');
+  let currentValue = parseInt(likeCount.innerText, 10);
+  let isIncremented = false;
+
+  btn.addEventListener('click', () => {
+    if (isIncremented) {
+      currentValue -= 1;
+      likeCount.innerText = currentValue.toString();
+      isIncremented = false;
+      createNotificationBox('Sorry');
+    } else {
+      currentValue += 1;
+      likeCount.innerText = currentValue.toString();
+      isIncremented = true;
+      createNotificationBox('Thanks');
+    }
+  });
+
+  function createNotificationBox(message) {
+    const newNotificationBox = document.createElement('div');
+    newNotificationBox.className = 'notificationbox';
+    newNotificationBox.innerText = message;
+    document.body.appendChild(newNotificationBox);
+
+    // Hide the notification box after a short delay (e.g., 2 seconds)
+    setTimeout(() => {
+      newNotificationBox.style.display = 'none';
+    }, 2000);
+  }
+</script>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script>
+    AOS.init(
+      {
+        offset: 250,
+        duration:900,
+      }
+    );
+  </script>
